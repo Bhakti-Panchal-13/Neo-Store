@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import {Poppins } from "next/font/google";
+import { Poppins } from 'next/font/google'
+
 import "./globals.css";
 
 const poppins = Poppins({
@@ -9,8 +10,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Neo Store",
-  description: "Neo Store - The only storage solution you need.",
+  title: "StoreIt",
+  description: "StoreIt - The only storage solution you need.",
 };
 
 export default function RootLayout({
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <body
+      <body
         className={`${poppins.variable} font-poppins antialiased`}
       >
         {children}
